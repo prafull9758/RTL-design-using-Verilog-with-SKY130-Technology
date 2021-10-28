@@ -155,3 +155,30 @@ here we can see submodules are flattened into gates.
 *How?*
 command --> #synth -top sub_module1
 ![Screenshot 2021-10-28 105623](https://user-images.githubusercontent.com/93269502/139191937-02ea176d-8f6b-4be0-87fb-4d352b3a142b.png)
+
+## Various Flop Coding Styles and Optimization
+
+*What is a GLITCH?*
+A glitch is a fast “spike” usually unwanted.
+
+![Screenshot 2021-10-28 123947](https://user-images.githubusercontent.com/93269502/139204610-44c433d8-a5b6-483d-a152-cea7b847c0ba.png)
+
+Glitch propogates through combinational circuit and results into unstable output.
+*Flipflop acts as a shield to a glitch.*
+A flip-flop is a device which stores a single bit (binary digit) of data; one of its two states represents a "one" and the other represents a "zero". Such data storage can be used for storage of state, and such a circuit is described as sequential logic in electronics.
+Set and Reset acts as initializations to the flops.
+
+![Screenshot 2021-10-28 130100](https://user-images.githubusercontent.com/93269502/139207175-bc9a2d64-da68-40b4-9f64-54a7dce92c6f.png)
+
+![Screenshot 2021-10-28 130231](https://user-images.githubusercontent.com/93269502/139207401-2fdf7295-13d2-4df9-b129-e9f3d46be431.png)
+
+The asynchronous reset is not awaiting the clock edge 
+
+![Screenshot 2021-10-28 145150](https://user-images.githubusercontent.com/93269502/139226448-1fa168ca-21d6-48dc-9142-eecc55bd9d9d.png)
+
+
+![syncres](https://user-images.githubusercontent.com/93269502/139228576-53e3c9de-7aec-4b85-99d0-9ba73ebd4d88.png)
+
+![syn_asyn](https://user-images.githubusercontent.com/93269502/139229792-9d359ca9-18d3-4866-b924-88c98172118c.png)
+
+![Screenshot 2021-10-28 151705](https://user-images.githubusercontent.com/93269502/139230780-2a19ffa9-4190-42f9-b049-c2514ae2e68e.png)
