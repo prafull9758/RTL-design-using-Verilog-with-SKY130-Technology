@@ -182,3 +182,37 @@ The asynchronous reset is not awaiting the clock edge
 ![syn_asyn](https://user-images.githubusercontent.com/93269502/139229792-9d359ca9-18d3-4866-b924-88c98172118c.png)
 
 ![Screenshot 2021-10-28 151705](https://user-images.githubusercontent.com/93269502/139230780-2a19ffa9-4190-42f9-b049-c2514ae2e68e.png)
+
+# D3 : Combinational and sequential optimization
+
+  ### Combinational Logic Optimization
+  ```
+  1. Squeezing the logic to get most optimized design (Area and power saving)
+  2. Constant Propogation (Direct optimization)
+  3. Boolean logic optimization using K-map or Quin Mcksklusey.
+   ```
+   * Constant Propogation 
+   ![Screenshot 2021-10-29 092522](https://user-images.githubusercontent.com/93269502/139372754-02854c09-b52a-430a-b1b2-ba961c46a106.png)
+
+   * Boolean logic optimization
+   ![Screenshot 2021-10-29 092814](https://user-images.githubusercontent.com/93269502/139372873-69306f05-c427-4619-95df-86332f029e81.png)
+
+   # Sequential Logic optimisation
+In Sequential Logic Optimisation there are 2 Techniques
+
+1 .Basic
+   
+   * Sequential Constant Propogation
+Some of the Sequential design in which D input is tied off the Squential Constant is propogated to give Q pin as a Constant and gives the most optmised design of the Squential Circuits.
+The Sequential Design in which Q does not remains as constant cannot be optimised and flop needs to be retained in the circuit.
+
+*Note*
+
+Every flop in which the D input is tied off is a sequential constant for the flop to become sequential constant the Q pin should always take a constant value.
+
+2. Advanced
+ * State Optimisation
+   ( Optimisation of unused states)
+  * Retiming(Technique to improve the Performance of the Circuit.)
+ *  Sequential Logic Cloning (Floor Plan Aware Synthesis):
+        It is done when we are doing a Physical Aware Synthesis.
