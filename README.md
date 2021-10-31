@@ -10,7 +10,7 @@ This is a repository on RTL design using Verilog with SKY130 Technology workshop
 
 <!-- code_chunk_output -->
 
-- [Day-1](#day-1)
+- [Day-1 Introduction to Verilog RTL Design and Synthesis](#day-1)
 	
 - [Day-2](#day-2)
  
@@ -25,8 +25,7 @@ This is a repository on RTL design using Verilog with SKY130 Technology workshop
 
 <!-- /code_chunk_output -->
 
-## Day-1
-## Introduction to Verilog RTL Design and Synthesis
+## Day-1 Introduction to Verilog RTL Design and Synthesis
 
 * ### Introduction to open source simulator iverilog
 
