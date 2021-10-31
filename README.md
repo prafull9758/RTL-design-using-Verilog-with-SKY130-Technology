@@ -4,39 +4,12 @@
 This is a repository on RTL design using Verilog with SKY130 Technology workshop conducted by VSD which intends to teach the verilog coding guidelines that results in predictable logic in Silicon by validating the functionality of the design (functional RTL code)  using Functional Simulation, writing Test Benches to validate the functionality of the RTL design, doing logic synthesis of the Functional RTL Code and doing Gate Level Simulation of  Synthesized Netlist.
  
  **Contents:**
+  * ### [Day 1 Introduction to Verilog RTL Design and Synthesis](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#Day-1-Introduction-to-Verilog-RTL-Design-and-Synthesis)
+  * ### [Day 2 Timing libs Hierarical vs Flat Synthesis and efficient Flop Coding Styles](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#Day-2-Timing-libs-Hierarical-vs-Flat-Synthesis-and-efficient-Flop-Coding-Styles)
+  * ### [Day 3 Combinational and sequential optimization](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#Day-3-Combinational-and-sequential-optimization)
+  * ### [DAY4 GLS blocking vs non blocking and Synthesis Simulation mismatch](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#DAY4-GLS-blocking-vs-non-blocking-and-Synthesis-Simulation-mismatch)
+  * ### [Day5 if, case, for loop and for generate](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#Day-5-if,-case,-for-loop-and for-generate)
 
-<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false`} -->
-
-<!-- code_chunk_output -->
-
-- [Day 1 Introduction to Verilog RTL Design and Synthesis](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#Day-1-Introduction-to-Verilog-RTL-Design-and-Synthesis)
-	- [Introduction](#introduction)
-	- [DC_shell](#dc_shell)
-	- [Tcl_scripting](#tcl_scripting)
-	- [Design_Vision](#design_vision)
-- [Day-2](#day-2)
-  - [STA_Basics](#sta_basics)
-  - [Constraints_and_IO_load](#constraints_and_io_load)
-  - [Timing_and_Exploring_dot_lib_files](#timing_and_exploring_dot_lib_files)  
-- [Day-3](#day-3)
-  - [Clock-tree_modelling](#clock-tree_modelling)
-  - [Clock-network_modelling_with_IO_delays](#clock-network_modelling_with_io_delays)
-- [Day-4](#day-4)
-  - [Combinational_and_resource_sharing_optimization](#combinational_and_resource_sharing_optimization)
-  - [Sequential_optimization](#sequential_optimization)
-  - [Special_optimization](#special_optimization)
-- [Day-5](#day-5)
-  - [Timing_report](#timing_report)
-  - [Set_max_capacitance_HFN](#set_max_capacitance_hfn)
-  - [Summary](#summary)
-  
- 
-
-
-- [Acknowledgements:](#acknowledgements)
-- [References:](#references)
-
-<!-- /code_chunk_output -->
 
 ## Day 1 Introduction to Verilog RTL Design and Synthesis
 
@@ -251,7 +224,7 @@ The asynchronous reset is not awaiting the clock edge
 
 ![Screenshot 2021-10-28 151705](https://user-images.githubusercontent.com/93269502/139230780-2a19ffa9-4190-42f9-b049-c2514ae2e68e.png)
 
-# D3 : Combinational and sequential optimization
+# Day 3 Combinational and sequential optimization
 
   ### Combinational Logic Optimization
   ```
@@ -422,7 +395,7 @@ endmodule
 
 
 
-# DAY4 : GLS blocking vs non blocking and Synthesis Simulation mismatch
+# DAY4 GLS blocking vs non blocking and Synthesis Simulation mismatch
 
 ### What is GLS?
 * It stands for Gate Level Simulation.
