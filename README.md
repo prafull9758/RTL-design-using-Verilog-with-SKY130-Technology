@@ -33,8 +33,41 @@ Simulator looks for changes in the Value of input.
 
 ![Screenshot 2021-10-27 220359](https://user-images.githubusercontent.com/93269502/139107705-e56e9182-d64d-47ff-855f-039e85b179f3.png)
 
- 
+### Lab
+1. good_mux.v
+```
+module good_mux (input i0 , input i1 , input sel , output reg y);
+always @ (*)
+begin
+	if(sel)
+		y <= i1;
+	else 
+		y <= i0;
+end
+endmodule 
+```
+![gmux](https://user-images.githubusercontent.com/93269502/139588745-c1b90b12-fd16-4f25-bab6-a0a86ff19fc8.PNG)
 
+### Synthesis using YOSYS open-source tool
+
+A Synthesizer is a tool used to convert the RTL Design into a netlist file (Standard Cell Format). To be more specific, a netlist is a standard gate level file that consists of nets, sequential and combinational cells and their connectivity of the corresponding RTL file coded using a HDL. In simple words, an rtl file is a code that describes the functionality of the design and a netlist is a file that expresses the same code in the form of logic cells like logic gates, flipflops, multiplexers with net connections etc.
+In this workshop we use yosys as a synthesizer tool.
+Command flow for synthesis using YOSYS
+```
+$yosys                                                                             // invokes YOSYS tool
+
+yosys> read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib           // reads the corresponding library file
+
+yosys> read_verilog good_mux.v                                                     // reads the Verilog script
+
+yosys> synth -top good_mux                                                         // reads the top level module
+
+yosys> abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib                 // converts the logic file to netlist
+
+yosys> show          
+                                                              // Final netlist output display
+```
+![synt](https://user-images.githubusercontent.com/93269502/139589334-b87d8627-2c2c-4354-a73a-53a95591d103.PNG)
 # Day 2 Timing libs Hierarical vs Flat Synthesis and efficient Flop Coding Styles
 
 ## Introduction to timing .lib
@@ -161,7 +194,7 @@ command --> #synth -top sub_module1
 *What is a GLITCH?*
 A glitch is a fast “spike” usually unwanted.
 
-![Screenshot 2021-10-28 123947](https://user-images.githubusercontent.com/93269502/139204610-44c433d8-a5b6-483d-a152-cea7b847c0ba.png)
+
 
 Glitch propogates through combinational circuit and results into unstable output.
 *Flipflop acts as a shield to a glitch.*
@@ -195,7 +228,8 @@ The asynchronous reset is not awaiting the clock edge
    ![Screenshot 2021-10-29 092522](https://user-images.githubusercontent.com/93269502/139372754-02854c09-b52a-430a-b1b2-ba961c46a106.png)
 
    * Boolean logic optimization
-   ![Screenshot 2021-10-29 092814](https://user-images.githubusercontent.com/93269502/139372873-69306f05-c427-4619-95df-86332f029e81.png)
+   Boolean logic optimization is nothing simplifying a complex boolean expression into a simplified expression by utilizing the laws of boolean logic algebra.
+
 
    # Sequential Logic optimisation
 In Sequential Logic Optimisation there are 2 Techniques
@@ -218,6 +252,22 @@ Every flop in which the D input is tied off is a sequential constant for the flo
         It is done when we are doing a Physical Aware Synthesis.
 
 ### Lab
+```
+$yosys
+
+yosys> read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib           
+
+yosys> read_verilog opt_check.v                                                     
+
+yosys> synth -top opt_check                                                         
+
+yosys> opt_clean -purge
+
+yosys> abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib                    
+
+yosys> show 
+```
+*we see a new code opt_clean -purge which is used to optimize the design by removing un-used net and components in the design after the design top level is synthesized using synt -top*
 
 ### *Combinational logic optimization*
  
@@ -518,11 +568,11 @@ end
 * Caution/Danger with if statement
 > Inferred latches : Bad coding style (incomplete if statement with missing else)
 
-![Screenshot 2021-10-31 101207](https://user-images.githubusercontent.com/93269502/139567928-05c5dfb8-85a2-4bab-9589-6fcfcb3cf23d.png)
+
 
 
 *Sometimes we need the inferred latch like in the case of counters if there is no enable the counter should latch on to the previous value.*
-![Screenshot 2021-10-31 101716](https://user-images.githubusercontent.com/93269502/139568079-ed7a767d-79da-4200-9808-24c959c980be.png)
+
 
 ### Case Statement
 *if and case statement are used inside the always block*,
@@ -549,11 +599,8 @@ begin
   
   inferred latches : occurs due to incomplete case statements (bad coding style). 
   *Always use default statement to avoid inferred latches*
-![mm](https://user-images.githubusercontent.com/93269502/139568430-3511b945-aaef-4f5d-a2ac-95c8938a9fe6.png)
 
-![nn](https://user-images.githubusercontent.com/93269502/139568652-b62f6b8f-2605-4c64-bfe0-5ac98ac21d0b.png)
 
-![ovlp](https://user-images.githubusercontent.com/93269502/139568739-7f753125-015e-4581-ab14-07a6033a719f.png)
 
 ### lab 
 
@@ -585,7 +632,7 @@ begin
 end
 endmodule
 ```
-![case](https://user-images.githubusercontent.com/93269502/139571370-97e8f231-d581-4ed8-8bb5-d998f57cc6e5.PNG)
+
 
 ![csl](https://user-images.githubusercontent.com/93269502/139571840-401c253b-c823-4879-b9cc-f2d6e035957f.PNG)
 
@@ -627,7 +674,6 @@ begin
 end
 endmodule
 ```
-![pcs](https://user-images.githubusercontent.com/93269502/139572649-ca7c9c4d-c556-4fdf-9aee-846b20e6df9e.PNG)
 
 ![pArt](https://user-images.githubusercontent.com/93269502/139573331-4e6566b1-5299-4bef-8908-eaa0c6e0a6aa.PNG)
 
@@ -638,14 +684,12 @@ There are 2 types of loops
 Used inside always block,
 used for evaluating expressions,
 not used for instantiating hardware.
-![for](https://user-images.githubusercontent.com/93269502/139574737-dd329ef6-33d4-49ab-88c6-27ad9f39d405.PNG)
+
 * Generate For Loop
 Used outside always block,
 cannot be used inside always,
 used for instantiating hardware.
 Used to replicate the hardware.
-![gen_for](https://user-images.githubusercontent.com/93269502/139574682-db1c71a6-476d-444e-afdc-1c50c7a76a0b.PNG)
-![gen](https://user-images.githubusercontent.com/93269502/139574897-9c5394e9-65ea-499a-b1fb-8f82636bda09.PNG)
 
 ### LAB 
 
