@@ -10,7 +10,28 @@ This is a repository on RTL design using Verilog with SKY130 Technology workshop
   * ### [DAY4 GLS blocking vs non blocking and Synthesis Simulation mismatch](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#DAY4-GLS-blocking-vs-non-blocking-and-Synthesis-Simulation-mismatch)
   * ### [Day 5 if, case, for loop and for generate](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#Day-5-if,-case,-for-loop-and-for-generate)
 
+**Contents:**
 
+<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false`} -->
+
+<!-- code_chunk_output -->
+
+- [Day-1](#day-1)
+	
+- [Day-2](#day-2)
+ 
+- [Day-3](#day-3)
+  
+- [Day-4](#day-4)
+ 
+- [Day-5](#day-5)
+  
+- [Acknowledgements:](#acknowledgements)
+- [References:](#references)
+
+<!-- /code_chunk_output -->
+
+## Day-1
 ## Day_1_Introduction_to_Verilog_RTL_Design_and_Synthesis
 
 * ### Introduction to open source simulator iverilog
