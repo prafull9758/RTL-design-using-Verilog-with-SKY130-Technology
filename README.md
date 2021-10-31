@@ -287,7 +287,7 @@ yosys> show
 ![opt_check2](https://user-images.githubusercontent.com/93269502/139582468-1e52039d-bbae-4ace-95a4-45ecbf538219.png)
 ![opt_check3](https://user-images.githubusercontent.com/93269502/139582476-4e681f87-73e8-408d-a328-1a40bb6d009a.png)
 ![optcheck4](https://user-images.githubusercontent.com/93269502/139582494-c0f26b08-1efe-4e4b-a68d-dbc1aa61e90a.png)
- incase we use multiple modules in a single code, we use flatten command as used in Flat Sysnthesis to perform the logic optimization of multiple modules after they are reduced to simple modules using flatten.
+ incase we use multiple modules in a single code, we use flatten command as used in Flat Synthesis to perform the logic optimization of multiple modules after they are reduced to simple modules using flatten.
 ![mul](https://user-images.githubusercontent.com/93269502/139582650-e2a6db94-6ef8-4c6a-be7c-de64720ab880.PNG)
 
 ![multiple_module_opt](https://user-images.githubusercontent.com/93269502/139582679-4d3a9607-25d7-4dac-9997-cbde2ad237fa.png)
@@ -404,7 +404,7 @@ endmodule
 * Netlist is logically same as the RTL Code(Same testbench will align with the design)
 
 ### Why GLS ?
-* Verify the LOgical Correctness of the design after synthesis.
+* Verify the Logical Correctness of the design after synthesis.
 * Ensuring the Timing of design is met (For this GLS needs to be run with delay annotation)
 
 ### GLS using iverilog
