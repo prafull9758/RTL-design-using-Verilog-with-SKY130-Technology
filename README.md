@@ -4,30 +4,13 @@
 This is a repository on RTL design using Verilog with SKY130 Technology workshop conducted by VSD which intends to teach the verilog coding guidelines that results in predictable logic in Silicon by validating the functionality of the design (functional RTL code)  using Functional Simulation, writing Test Benches to validate the functionality of the RTL design, doing logic synthesis of the Functional RTL Code and doing Gate Level Simulation of  Synthesized Netlist.
  
 * ### [Day-1 Introduction to Verilog RTL Design and Synthesis](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology#day-1-introduction-to-verilog-rtl-design-and-synthesis)
-* ### [Day-2 Timing libs Hierarical vs Flat Synthesis and efficient Flop Coding Styles]()
-* ### [Day-3 Combinational and sequential optimization]()
-* ### [Day-4 GLS blocking vs non blocking and Synthesis Simulation mismatch]()
-* ### [Day-5 if, case, for loop and for generate]()
-**Contents:**
+* ### [Day-2 Timing libs Hierarical vs Flat Synthesis and efficient Flop Coding Styles](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology#day-2-timing-libs-hierarical-vs-flat-synthesis-and-efficient-flop-coding-styles-1)
+* ### [Day-3 Combinational and sequential optimization](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology#day-3-combinational-and-sequential-optimization-1)
+* ### [Day-4 GLS blocking vs non blocking and Synthesis Simulation mismatch](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology#day-4-gls-blocking-vs-non-blocking-and-synthesis-simulation-mismatch-1)
+* ### [Day-5 if, case, for loop and for generate](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology#day-5-if-case-for-loop-and-for-generate-1)
+* ### [Acknowledgements](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology#acknowledgements)
+* ### [References](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology#acknowledgements)
 
-<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false`} -->
-
-<!-- code_chunk_output -->
-
-- [Day-1 Introduction to Verilog RTL Design and Synthesis](#day-1)
-	
-- [Day-2](#day-2)
- 
-- [Day-3](#day-3)
-  
-- [Day-4](#day-4)
- 
-- [Day-5](#day-5)
-  
-- [Acknowledgements](#acknowledgements)
-- [References](#references)
-
-<!-- /code_chunk_output -->
 
 ## Day-1 Introduction to Verilog RTL Design and Synthesis
 
