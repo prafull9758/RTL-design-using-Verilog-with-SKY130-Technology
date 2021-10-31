@@ -4,14 +4,14 @@
 This is a repository on RTL design using Verilog with SKY130 Technology workshop conducted by VSD which intends to teach the verilog coding guidelines that results in predictable logic in Silicon by validating the functionality of the design (functional RTL code)  using Functional Simulation, writing Test Benches to validate the functionality of the RTL design, doing logic synthesis of the Functional RTL Code and doing Gate Level Simulation of  Synthesized Netlist.
  
  **Contents:**
-  * ### [Day 1 Introduction to Verilog RTL Design and Synthesis](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#Day-1-Introduction-to-Verilog-RTL-Design-and-Synthesis)
+  * ### [Day1_Introduction_to_Verilog_RTL_Design_and_Synthesis](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#Day-1-Introduction-to-Verilog-RTL-Design-and-Synthesis)
   * ### [Day 2 Timing libs Hierarical vs Flat Synthesis and efficient Flop Coding Styles](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#Day-2-Timing-libs-Hierarical-vs-Flat-Synthesis-and-efficient-Flop-Coding-Styles)
   * ### [Day 3 Combinational and sequential optimization](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#Day-3-Combinational-and-sequential-optimization)
   * ### [DAY4 GLS blocking vs non blocking and Synthesis Simulation mismatch](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#DAY4-GLS-blocking-vs-non-blocking-and-Synthesis-Simulation-mismatch)
   * ### [Day 5 if, case, for loop and for generate](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#Day-5-if,-case,-for-loop-and-for-generate)
 
 
-## Day 1 Introduction to Verilog RTL Design and Synthesis
+## Day_1_Introduction_to_Verilog_RTL_Design_and_Synthesis
 
 * ### Introduction to open source simulator iverilog
 
