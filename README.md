@@ -3,12 +3,6 @@
 
 This is a repository on RTL design using Verilog with SKY130 Technology workshop conducted by VSD which intends to teach the verilog coding guidelines that results in predictable logic in Silicon by validating the functionality of the design (functional RTL code)  using Functional Simulation, writing Test Benches to validate the functionality of the RTL design, doing logic synthesis of the Functional RTL Code and doing Gate Level Simulation of  Synthesized Netlist.
  
- **Contents:**
-  * ### [Day1_Introduction_to_Verilog_RTL_Design_and_Synthesis](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#Day-1-Introduction-to-Verilog-RTL-Design-and-Synthesis)
-  * ### [Day 2 Timing libs Hierarical vs Flat Synthesis and efficient Flop Coding Styles](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#Day-2-Timing-libs-Hierarical-vs-Flat-Synthesis-and-efficient-Flop-Coding-Styles)
-  * ### [Day 3 Combinational and sequential optimization](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#Day-3-Combinational-and-sequential-optimization)
-  * ### [DAY4 GLS blocking vs non blocking and Synthesis Simulation mismatch](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#DAY4-GLS-blocking-vs-non-blocking-and-Synthesis-Simulation-mismatch)
-  * ### [Day 5 if, case, for loop and for generate](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#Day-5-if,-case,-for-loop-and-for-generate)
 
 **Contents:**
 
@@ -26,8 +20,8 @@ This is a repository on RTL design using Verilog with SKY130 Technology workshop
  
 - [Day-5](#day-5)
   
-- [Acknowledgements:](#acknowledgements)
-- [References:](#references)
+- [Acknowledgements](#acknowledgements)
+- [References](#references)
 
 <!-- /code_chunk_output -->
 
@@ -97,6 +91,8 @@ yosys> show
                                                               // Final netlist output display
 ```
 ![synt](https://user-images.githubusercontent.com/93269502/139589334-b87d8627-2c2c-4354-a73a-53a95591d103.PNG)
+
+# Day-2
 # Day 2 Timing libs Hierarical vs Flat Synthesis and efficient Flop Coding Styles
 
 ## Introduction to timing .lib
@@ -245,6 +241,7 @@ The asynchronous reset is not awaiting the clock edge
 
 ![Screenshot 2021-10-28 151705](https://user-images.githubusercontent.com/93269502/139230780-2a19ffa9-4190-42f9-b049-c2514ae2e68e.png)
 
+# Day-3
 # Day 3 Combinational and sequential optimization
 
   ### Combinational Logic Optimization
@@ -415,7 +412,7 @@ endmodule
 
 
 
-
+# Day-4
 # DAY4 GLS blocking vs non blocking and Synthesis Simulation mismatch
 
 ### What is GLS?
@@ -563,7 +560,7 @@ endmodule
 ```
 here we changed the order of block statement which will solve our problem and fix the problem.
 
-
+# Day-5
 # Day 5 if, case, for loop and for generate
 
 ### IF CASE Constructs
