@@ -8,7 +8,7 @@ This is a repository on RTL design using Verilog with SKY130 Technology workshop
   * ### [Day 2 Timing libs Hierarical vs Flat Synthesis and efficient Flop Coding Styles](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#Day-2-Timing-libs-Hierarical-vs-Flat-Synthesis-and-efficient-Flop-Coding-Styles)
   * ### [Day 3 Combinational and sequential optimization](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#Day-3-Combinational-and-sequential-optimization)
   * ### [DAY4 GLS blocking vs non blocking and Synthesis Simulation mismatch](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#DAY4-GLS-blocking-vs-non-blocking-and-Synthesis-Simulation-mismatch)
-  * ### [Day5 if, case, for loop and for generate](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#Day-5-if,-case,-for-loop-and for-generate)
+  * ### [Day 5 if, case, for loop and for generate](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology/edit/main/README.md#Day-5-if,-case,-for-loop-and-for-generate)
 
 
 ## Day 1 Introduction to Verilog RTL Design and Synthesis
@@ -543,7 +543,7 @@ endmodule
 here we changed the order of block statement which will solve our problem and fix the problem.
 
 
-# Day5 if, case, for loop and for generate
+# Day 5 if, case, for loop and for generate
 
 ### IF CASE Constructs
 
