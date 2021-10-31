@@ -3,7 +3,7 @@
 
 This is a repository on RTL design using Verilog with SKY130 Technology workshop conducted by VSD which intends to teach the verilog coding guidelines that results in predictable logic in Silicon by validating the functionality of the design (functional RTL code)  using Functional Simulation, writing Test Benches to validate the functionality of the RTL design, doing logic synthesis of the Functional RTL Code and doing Gate Level Simulation of  Synthesized Netlist.
  
-
+* ### [Introduction to Verilog RTL Design and Synthesis](https://github.com/prafull9758/RTL-design-using-Verilog-with-SKY130-Technology#introduction-to-verilog-rtl-design-and-synthesis)
 **Contents:**
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false`} -->
