@@ -26,7 +26,7 @@ This is a repository on RTL design using Verilog with SKY130 Technology workshop
 <!-- /code_chunk_output -->
 
 ## Day-1
-## Day_1_Introduction_to_Verilog_RTL_Design_and_Synthesis
+## Introduction to Verilog RTL Design and Synthesis
 
 * ### Introduction to open source simulator iverilog
 
@@ -93,7 +93,7 @@ yosys> show
 ![synt](https://user-images.githubusercontent.com/93269502/139589334-b87d8627-2c2c-4354-a73a-53a95591d103.PNG)
 
 # Day-2
-# Day 2 Timing libs Hierarical vs Flat Synthesis and efficient Flop Coding Styles
+# Timing libs Hierarical vs Flat Synthesis and efficient Flop Coding Styles
 
 ## Introduction to timing .lib
 
@@ -242,7 +242,7 @@ The asynchronous reset is not awaiting the clock edge
 ![Screenshot 2021-10-28 151705](https://user-images.githubusercontent.com/93269502/139230780-2a19ffa9-4190-42f9-b049-c2514ae2e68e.png)
 
 # Day-3
-# Day 3 Combinational and sequential optimization
+# Combinational and sequential optimization
 
   ### Combinational Logic Optimization
   ```
@@ -413,7 +413,7 @@ endmodule
 
 
 # Day-4
-# DAY4 GLS blocking vs non blocking and Synthesis Simulation mismatch
+# GLS blocking vs non blocking and Synthesis Simulation mismatch
 
 ### What is GLS?
 * It stands for Gate Level Simulation.
@@ -561,7 +561,7 @@ endmodule
 here we changed the order of block statement which will solve our problem and fix the problem.
 
 # Day-5
-# Day 5 if, case, for loop and for generate
+# if, case, for loop and for generate
 
 ### IF CASE Constructs
 
